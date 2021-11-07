@@ -1,0 +1,14 @@
+DUMP ON
+LIT 1
+LIT 2
+LIT 3
+LIT 10
+ARGS 2
+CALL square<<1>>
+WRITE
+HALT
+LABEL square<<1>>
+LOAD 0 x
+LOAD 0 x
+BOP *
+RETURN

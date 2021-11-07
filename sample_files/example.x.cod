@@ -1,0 +1,11 @@
+DUMP ON
+LIT 0 m
+LIT 3
+ARGS 1
+CALL f<<2>>
+LABEL f<<2>>
+LIT 0 j
+LIT 0 k
+LOAD 0 i
+LOAD 1 j
+HALT

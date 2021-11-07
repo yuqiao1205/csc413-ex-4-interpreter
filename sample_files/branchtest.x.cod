@@ -1,0 +1,20 @@
+DUMP ON
+LIT 5
+GOTO square<<1>>
+LIT 10
+WRITE
+HALT
+LABEL square<<1>>
+LOAD 0 x
+LOAD 0 x
+BOP *
+FALSEBRANCH end<<1>>
+LIT 0 y
+LIT 0 y
+BOP *
+FALSEBRANCH write<<1>>
+LIT 999 y
+LABEL write<<1>>
+WRITE
+LABEL end<<1>>
+HALT

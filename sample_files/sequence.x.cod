@@ -1,0 +1,5 @@
+DUMP ON
+LIT 5
+LIT 6
+BOP >
+HALT
