@@ -99,7 +99,6 @@ public class RunTimeStack {
         this.push(top);
     }
 
-
     /**
      * Used to store into variables.
      * Store will pop the top value of the stack and replace the value at the
@@ -127,6 +126,4 @@ public class RunTimeStack {
     public List<Integer> getCurrentStackFrame() {
         return runStack.subList(framePointers.peek(), runStack.size());
     }
-
-
 }
