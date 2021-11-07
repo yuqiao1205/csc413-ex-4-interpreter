@@ -56,7 +56,6 @@ public class VirtualMachine {
                 code.dump(this);
                 runTimeStack.dump();
             }
-
             pc++;
         }
     }
