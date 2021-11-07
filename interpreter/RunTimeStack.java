@@ -1,6 +1,5 @@
 package interpreter;
 
-
 import java.util.List;
 import java.util.Stack;
 import java.util.Vector;
@@ -17,8 +16,7 @@ public class RunTimeStack {
 
         framePointers = new Stack<>();
         runStack = new Vector<>();
-        // Add initial Frame Pointer, main is the entry
-        // point of our language, so its frame pointer is 0.
+       
         framePointers.push(0);
 
     }
