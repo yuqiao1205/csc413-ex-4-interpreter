@@ -11,9 +11,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ByteCodeLoader {
-    // TODO: read each line from bytecode file
-    //  and parse bytecode
-    //  create program object based on the content of bytecode
+    
     private String byteCodeFile;
 
     public ByteCodeLoader(String byteCodeFile) throws IOException {
@@ -29,8 +27,7 @@ public class ByteCodeLoader {
                 // Tokenize line into an ArrayList of strings, the first token will be the byte code class key
                 List<String> tokens = new ArrayList<>(Arrays.asList(line.split(" ")));
 
-                // Remove the byte code class key from the ArrayList
-                // Convert the byte code class key into a byte code class name
+               
                 // Create new byte code object from class name
                 String codeClass = CodeTable.getClassName(tokens.get(0));
                 ByteCode byteCode = (ByteCode) Class.forName("interpreter.bytecode." + codeClass).newInstance();
