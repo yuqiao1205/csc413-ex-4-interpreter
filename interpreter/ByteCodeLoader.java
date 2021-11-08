@@ -32,7 +32,6 @@ public class ByteCodeLoader {
                 String codeClass = CodeTable.getClassName(tokens.get(0));
                 ByteCode byteCode = (ByteCode) Class.forName("interpreter.bytecode." + codeClass).newInstance();
 
-                // Pass arguments to the byte code's init method even if it does not contain arguments
                 tokens.remove(0);
                 byteCode.init(tokens);
 
