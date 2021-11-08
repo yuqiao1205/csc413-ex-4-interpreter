@@ -26,8 +26,7 @@ public class ByteCodeLoader {
             while ((line = byteCodes.readLine()) != null) {
                 // Tokenize line into an ArrayList of strings, the first token will be the byte code class key
                 List<String> tokens = new ArrayList<>(Arrays.asList(line.split(" ")));
-
-               
+                
                 // Create new byte code object from class name
                 String codeClass = CodeTable.getClassName(tokens.get(0));
                 ByteCode byteCode = (ByteCode) Class.forName("interpreter.bytecode." + codeClass).newInstance();
@@ -43,5 +42,4 @@ public class ByteCodeLoader {
 
         return loadedProgram;
     }
-
 }
