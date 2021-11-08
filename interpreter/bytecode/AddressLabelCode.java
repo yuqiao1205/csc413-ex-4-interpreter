@@ -2,7 +2,7 @@ package interpreter.bytecode;
 
 public abstract class AddressLabelCode extends ByteCode{
 
-    protected  int address;
+    protected int address;
 
     protected String label;
 
