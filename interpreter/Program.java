@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.Map;
 
 public class Program {
-
     private final List<ByteCode> codeList;
 
     private Map<String, Integer> addresses = new HashMap<>();
@@ -45,5 +44,4 @@ public class Program {
 
         }
     }
-
 }

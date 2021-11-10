@@ -5,9 +5,11 @@ import interpreter.VirtualMachine;
 import java.util.List;
 
 public class ReturnCode extends ByteCode {
-
     private String function = "";
     private String baseId = "";
+
+    public ReturnCode() {
+    }
 
     @Override
     public void init(List<String> args) {

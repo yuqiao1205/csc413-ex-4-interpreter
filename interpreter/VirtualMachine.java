@@ -29,7 +29,6 @@ import interpreter.bytecode.DumpCode;
 import java.util.Stack;
 
 public class VirtualMachine {
-
     private int pc;
     private RunTimeStack runTimeStack;
     private Stack<Integer> returnAddresses;

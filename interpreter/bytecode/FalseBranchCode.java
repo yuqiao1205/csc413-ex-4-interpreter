@@ -5,6 +5,8 @@ import interpreter.VirtualMachine;
 import java.util.List;
 
 public class FalseBranchCode extends AddressLabelCode {
+    public FalseBranchCode() {
+    }
 
     @Override
     public void init(List<String> args) {
@@ -25,5 +27,4 @@ public class FalseBranchCode extends AddressLabelCode {
     public void dump(VirtualMachine vm) {
         System.out.println("FALSEBRANCH " + label);
     }
-
 }

@@ -5,10 +5,12 @@ import interpreter.VirtualMachine;
 import java.util.List;
 
 public class LitCode extends ByteCode {
-
     private int value;
 
     private String variable = "";
+
+    public LitCode() {
+    }
 
     @Override
     public void init(List<String> args) {

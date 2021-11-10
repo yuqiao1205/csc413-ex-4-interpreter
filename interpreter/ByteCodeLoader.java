@@ -11,7 +11,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ByteCodeLoader {
-    
     private String byteCodeFile;
 
     public ByteCodeLoader(String byteCodeFile) throws IOException {

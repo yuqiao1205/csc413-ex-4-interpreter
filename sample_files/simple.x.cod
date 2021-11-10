@@ -8,8 +8,8 @@ LOAD 0 dummyFormal
 WRITE
 RETURN Write
 LABEL start<<1>>
-LIT 6 i
-LIT 2 j
+LIT 0 i
+LIT 0 j
 LOAD 0 i
 LOAD 1 j
 BOP +

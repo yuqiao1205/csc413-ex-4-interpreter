@@ -7,12 +7,14 @@ import java.util.List;
 public class BopCode extends ByteCode {
     private String operator;
 
+    public BopCode() {
+    }
+
     @Override
     public void init(List<String> args) {
         CodeUtils.checkArgs(args, "BOP", 1);
         operator = args.get(0);
     }
-
 
     @Override
     public void execute(VirtualMachine vm) {

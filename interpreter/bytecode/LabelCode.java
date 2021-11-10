@@ -7,6 +7,9 @@ import java.util.List;
 public class LabelCode extends ByteCode{
     private String label;
 
+    public LabelCode() {
+    }
+
     @Override
     public void init(List<String> args) {
         CodeUtils.checkArgs(args, "LABEL", 1);

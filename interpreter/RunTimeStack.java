@@ -5,7 +5,6 @@ import java.util.Stack;
 import java.util.Vector;
 
 public class RunTimeStack {
-
     private Stack<Integer> framePointers;
 
     private Vector<Integer> runStack;

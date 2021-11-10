@@ -9,6 +9,9 @@ public class DumpCode extends ByteCode {
 
     private boolean dump;
 
+    public DumpCode() {
+    }
+
     @Override
     public void init(List<String> args) {
         CodeUtils.checkArgs(args, "DUMP", 1);

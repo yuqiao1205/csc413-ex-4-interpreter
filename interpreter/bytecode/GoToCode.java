@@ -5,6 +5,8 @@ import interpreter.VirtualMachine;
 import java.util.List;
 
 public class GoToCode extends AddressLabelCode {
+    public GoToCode() {
+    }
 
     @Override
     public void init(List<String> args) {
@@ -23,5 +25,4 @@ public class GoToCode extends AddressLabelCode {
     public void dump(VirtualMachine vm) {
         System.out.println( "GOTO " + label);
     }
-
 }

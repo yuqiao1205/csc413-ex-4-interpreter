@@ -8,6 +8,8 @@ import java.io.InputStreamReader;
 import java.util.List;
 
 public class ReadCode extends ByteCode {
+    public ReadCode() {
+    }
 
     @Override
     public void init(List<String> args) {
@@ -35,5 +37,4 @@ public class ReadCode extends ByteCode {
             throw new IllegalStateException("Failed to read integer!");
         }
     }
-
 }

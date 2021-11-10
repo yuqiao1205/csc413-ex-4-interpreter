@@ -6,8 +6,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class CallCode extends AddressLabelCode {
-
     private String baseId;
+
+    public CallCode() {
+    }
 
     @Override
     public void init(List<String> args) {
@@ -36,5 +38,4 @@ public class CallCode extends AddressLabelCode {
                                 .collect(Collectors.joining(","))
                         + ")");
     }
-
 }

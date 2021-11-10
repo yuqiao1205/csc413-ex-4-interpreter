@@ -3,7 +3,6 @@ package interpreter;
 import java.io.IOException;
 
 public class Interpreter {
-
     ByteCodeLoader byteCodeLoader;
 
     public Interpreter(String codeFile) {
@@ -29,5 +28,4 @@ public class Interpreter {
 
         (new Interpreter(args[0])).run();
     }
-
 }

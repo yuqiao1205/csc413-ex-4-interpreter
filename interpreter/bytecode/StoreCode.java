@@ -5,10 +5,12 @@ import interpreter.VirtualMachine;
 import java.util.List;
 
 public class StoreCode extends ByteCode {
-
     private int offset;
     private String variable = "";
     private Integer storedValue;
+
+    public StoreCode() {
+    }
 
     @Override
     public void init(List<String> args) {
@@ -38,5 +40,4 @@ public class StoreCode extends ByteCode {
             System.out.printf("%-25s%n", "STORE " + offset + " " + variable);
         }
     }
-
 }

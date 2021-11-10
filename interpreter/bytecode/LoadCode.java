@@ -5,9 +5,11 @@ import interpreter.VirtualMachine;
 import java.util.List;
 
 public class LoadCode extends ByteCode {
-
     private int offset;
     private String variable = "";
+
+    public LoadCode() {
+    }
 
     @Override
     public void init(List<String> args) {
@@ -30,5 +32,4 @@ public class LoadCode extends ByteCode {
             System.out.printf("%-25s%n", "LOAD " + offset);
         }
     }
-
 }

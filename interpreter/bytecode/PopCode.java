@@ -7,6 +7,9 @@ import java.util.List;
 public class PopCode extends ByteCode {
     private int levelsToPop;
 
+    public PopCode() {
+    }
+
     @Override
     public void init(List<String> args) {
         CodeUtils.checkArgs(args, "POP", 1);

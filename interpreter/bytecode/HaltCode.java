@@ -4,8 +4,9 @@ import interpreter.VirtualMachine;
 
 import java.util.List;
 
-
 public class HaltCode extends ByteCode {
+    public HaltCode() {
+    }
 
     @Override
     public void init(List<String> args) {
@@ -21,5 +22,4 @@ public class HaltCode extends ByteCode {
     public void dump(VirtualMachine vm) {
         System.out.println("HALT");
     }
-
 }
