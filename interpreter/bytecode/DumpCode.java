@@ -4,7 +4,6 @@ import interpreter.VirtualMachine;
 
 import java.util.List;
 
-
 public class DumpCode extends ByteCode {
 
     private boolean dump;
