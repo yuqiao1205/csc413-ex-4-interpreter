@@ -57,5 +57,4 @@ public class BopCode extends ByteCode {
         System.out.print("BOP " + operator);
         System.out.println();
     }
-
 }
